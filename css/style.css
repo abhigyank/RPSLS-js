@@ -17,6 +17,7 @@ body{
 	background: #179b77;
 }
 
+
 #choices{
 	margin: auto;
 }
@@ -42,6 +43,26 @@ body{
 	pointer-events: none;
 	width: 100%;
 }
+
+
+@media screen and (max-width:800px){
+	#names{
+		display: none;
+	}
+	#choices{
+		margin-top: 30%;
+	}
+	#choices li{
+		height: 30vw;
+		width: 30vw;
+		margin-left: 1vw;
+		margin-right: 10vw;	
+		margin-bottom: 4vw;
+	}
+	#choices li:nth-of-type(2n){
+		margin-left: 0; 
+	}
+} 
 
 p{
 	padding-left: 40px;
@@ -78,6 +99,24 @@ p span{
 	border-right:1px solid #505050;
 
 }
+
+
+@media screen and (max-width:800px){
+	#scores li{
+		padding: 5%
+	}
+
+}
+@media screen and (width: 768px) and (height: 1024px){
+	#bot,#user{
+		font-size: 2em;
+	}
+	p{
+		font-size:2em; 
+	}
+}
+
+
 @font-face{
 	font-family: 'icomoon'; 
 	src:  url('../fonts/icomoon.eot?ejywi');
