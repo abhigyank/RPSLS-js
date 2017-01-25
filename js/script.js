@@ -76,19 +76,19 @@ function game(choice){
     text.style.color="green";
     choice.style.background="green";
     text.innerHTML=result;
-    setTimeout(function(){choice.style.background ="none";},1000);
+    setTimeout(function(){choice.style.background ="";},1000);
   }
   else if(result==botWins){
     text.style.color="red";
     choice.style.background="red";
     text.innerHTML=result;
-    setTimeout(function(){choice.style.background ="none";},1000);
+    setTimeout(function(){choice.style.background ="";},1000);
   }
   else if(result==draw){
     text.style.color="white";
     choice.style.background="white";
     text.innerHTML=result;
-    setTimeout(function(){choice.style.background ="none";},1000);  
+    setTimeout(function(){choice.style.background ="";},1000);  
   }
   score(result,userWins,botWins);
 };
