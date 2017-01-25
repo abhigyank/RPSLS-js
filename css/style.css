@@ -41,10 +41,6 @@ img{
   transition:background 1s;
 }
 
-#choices li:hover{
-  background: rgba(0,255,255,0.3);
-}
-
 #choices li img{
   vertical-align: middle;
   pointer-events: none;
