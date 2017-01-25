@@ -1,4 +1,4 @@
-	var text = document.getElementsByTagName("P");
+var text = document.getElementsByTagName("P");
 text = text[0];
 var userLives = 0;
 var botLives = 0;
@@ -72,13 +72,11 @@ function game(choice){
  		}
  	}
 
-
  	if(result==userWins){
  		text.style.color="green";
  		choice.style.background="green";
  		text.innerHTML=result;
  		setTimeout(function(){choice.style.background ="none";},1000);
-
  	}
  	else if(result==botWins){
  		text.style.color="red";
@@ -87,13 +85,12 @@ function game(choice){
  		setTimeout(function(){choice.style.background ="none";},1000);
  	}
  	else if(result==draw){
- 	text.style.color="white";
-	choice.style.background="white";
-	text.innerHTML=result;
-	setTimeout(function(){choice.style.background ="none";},1000);	
+	 	text.style.color="white";
+		choice.style.background="white";
+		text.innerHTML=result;
+		setTimeout(function(){choice.style.background ="none";},1000);	
  	}
  	score(result,userWins,botWins);
-
 };
 
 function score(result,userWins,botWins){
