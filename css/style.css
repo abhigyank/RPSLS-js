@@ -1,155 +1,156 @@
 body{
-	background: #292A30;
-	text-align: center;
+  background: #292A30;
+  text-align: center;
 }
 
 #names{
-	margin: 15% auto 1% auto;
+  margin: 15% auto 1% auto;
 }
 #names li{
-	display: inline-block;
-	margin: 0 3.8vw;
-	font-size: 1.6em;
-	border-radius:15%;
-	border: 1px solid #fff;
-	padding: 0 1vw;	
-	color: white;
-	background: #179b77;
+  display: inline-block;
+  margin: 0 3.8vw;
+  font-size: 1.6em;
+  border-radius:15%;
+  border: 1px solid #fff;
+  padding: 0 1vw; 
+  color: white;
+  background: #179b77;
 }
 
 img{
-	-khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-	user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #choices{
-	margin: auto;
+  margin: auto;
 }
 
 #choices li{
-	display: inline-block;
-	cursor: pointer;
-	height: 10vw;
-	width: 10vw;
-	border-radius: 50%;
-	border: 1px solid #fff;
-	margin: 0 30px;
-    line-height:110px;
-    transition:background 1s;
+  display: inline-block;
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 30px;
+  line-height:110px;
+  transition:background 1s;
 }
 
 #choices li:hover{
-	background: rgba(0,255,255,0.3);
+  background: rgba(0,255,255,0.3);
 }
 
 #choices li img{
-	vertical-align: middle;
-	pointer-events: none;
-	width: 100%;
+  vertical-align: middle;
+  pointer-events: none;
+  width: 100%;
 }
 
 
 @media screen and (max-width:800px){
-	#names{
-		display: none;
-	}
-	#choices{
-		margin-top: 30%;
-	}
-	#choices li{
-		height: 30vw;
-		width: 30vw;
-		margin-left: 1vw;
-		margin-right: 10vw;	
-		margin-bottom: 4vw;
-	}
-	#choices li:nth-of-type(2n){
-		margin-left: 0; 
-	}
+  #names{
+    display: none;
+  }
+  #choices{
+    margin-top: 30%;
+  }
+  #choices li{
+    height: 30vw;
+    width: 30vw;
+    margin-left: 1vw;
+    margin-right: 10vw; 
+    margin-bottom: 4vw;
+  }
+  #choices li:nth-of-type(2n){
+    margin-left: 0; 
+  }
 } 
 
 p{
-	padding-left: 40px;
-	color:#fff;
-	transition: color 1s;
+  padding-left: 40px;
+  color:#fff;
+  transition: color 1s;
 }
 p span{
-	font-size: 1.8em;
-	display: block;
-	font-weight: 700;
+  font-size: 1.8em;
+  display: block;
+  font-weight: 700;
 }
 
 #scores li{
-	display: inline-block;
+  display: inline-block;
 }
 #scores li ul{
-	margin-top:10px; 
-	margin-left: -40px
+  margin-top:10px; 
+  margin-left: -40px
 }
 
 
 #scores li ul li{
-	display:inline-block;
-	margin:0 5px}
+  display:inline-block;
+  margin:0 5px
+}
+
 #scores li ul li span{
-	color:rgb(255,0,0);
+  color:rgb(255,0,0);
 }
 
 #user, #bot{
-	padding: 40px;
+  padding: 40px;
 }
 
 #scores > li:first-child{
-	border-right:1px solid #505050;
+  border-right:1px solid #505050;
 
 }
 
-
 @media screen and (max-width:800px){
-	#scores li{
-		padding: 5%
-	}
+  #scores li{
+    padding: 5%
+  }
 
 }
 @media screen and (width: 768px) and (height: 1024px){
-	#bot,#user{
-		font-size: 2em;
-	}
-	p{
-		font-size:2em; 
-	}
+  #bot,#user{
+    font-size: 2em;
+  }
+  p{
+    font-size:2em; 
+  }
 }
 
 
 @font-face{
-	font-family: 'icomoon'; 
-	src:  url('../fonts/icomoon.eot?ejywi');
-	src:  url('../fonts/icomoon.eot?ejywi#iefix') format('embedded-opentype'),
-	url('../fonts/icomoon.ttf?ejywi') format('truetype'),
-	url('../fonts/icomoon.woff?ejywi') format('woff'),
-	url('../fonts/icomoon.svg?ejywi#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icomoon'; 
+  src:  url('../fonts/icomoon.eot?ejywi');
+  src:  url('../fonts/icomoon.eot?ejywi#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?ejywi') format('truetype'),
+  url('../fonts/icomoon.woff?ejywi') format('woff'),
+  url('../fonts/icomoon.svg?ejywi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 .icon-user:before {
-	content: "\e971";
-	font-size: 3em;
+  content: "\e971";
+  font-size: 3em;
 }
 .icon-android:before {
-	content: "\eac0";
-	font-size: 3em;
+  content: "\eac0";
+  font-size: 3em;
 }
 
 .icon-heart:before {
- 		content: "\e9da";
+  content: "\e9da";
 }
 
 [class^="icon-"], [class*=" icon-"] {
-font-family: 'icomoon' !important; 
-color:white;
-opacity: 0.8;
+  font-family: 'icomoon' !important; 
+  color:white;
+  opacity: 0.8;
 }
